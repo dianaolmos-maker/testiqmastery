@@ -834,7 +834,7 @@ if (progressFill) progressFill.style.width = `${progressPercent}%`;
 // ================= WEBHOOK =================
 
 // *** CAMBIO AQUÍ: Nueva URL del webhook ***
-const WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/HFgqPVifwNR2SxrzGwEG/webhook-trigger/fd6eeff9-3168-4d6d-9219-1b3846c29957'; // <--- REEMPLAZA CON LA NUEVA URL
+const WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/W602heI1rkidSvaFESri/webhook-trigger/a47cf295-47d7-49ca-ad20-3d8eb6d6db2c'; // <--- REEMPLAZA CON LA NUEVA URL
 
 async function submitAndShowResults() {
     const name = document.getElementById('ghl-name')?.value || '';
@@ -969,3 +969,4 @@ function restartTest() {
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
+
