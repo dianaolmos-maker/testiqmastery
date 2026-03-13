@@ -758,7 +758,7 @@ function createResultsPage16() {
             renderSlide();
         } else {
             // URL del calendario
-            const calendarioURL = 'https://api.leadconnectorhq.com/widget/booking/ot7OaBbmHfnGN7cVtHCy';
+            const calendarioURL = 'https://api.leadconnectorhq.com/widget/bookings/embudo-mastery-1-2-3-8c2982d9-2a2f-4723-a6b9-14c548f1529a';
             window.open(calendarioURL, '_blank');
         }
     });
@@ -931,4 +931,5 @@ function restartTest() {
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
+
 
