@@ -763,7 +763,7 @@ continueBtn.addEventListener('click', () => {
             renderSlide();
         } else {
             // URL del calendario
-            const calendarioURL = 'https://api.leadconnectorhq.com/widget/form/oghcd9Tf8wuZc7P3ORBD?notrack=true';
+            const calendarioURL = '';
             window.open(calendarioURL, '_blank');
         }
     });
