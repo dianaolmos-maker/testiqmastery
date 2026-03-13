@@ -697,18 +697,23 @@ function createResultsPage16() {
 
         <div class="results16-actions">
             <button class="btn results15-btn" id="results16-continue">
-                EVALUAR MI CASO CON UN ESTRATEGA
-            </button>
-
-            <p class="results16-disclaimer">
-                Conversación de diagnóstico sin costo (45–60 min). 
-                No es una llamada de ventas. 
-                Solo para founders en operación.
-            </p>
-
-            <button class="results16-link" type="button" onclick="prevPage()">Volver</button>
-        </div>
-    `;
+               
+                // Botón final redirige al calendario (en la misma pestaña)
+continueBtn.addEventListener('click', () => {
+    if (currentSlide < slides.length - 1) {
+        currentSlide++;
+        renderSlide();
+    } else {
+        // 🔴 VERIFICA QUE ESTA URL SEA LA CORRECTA
+        const calendarioURL = 'https://api.leadconnectorhq.com/widget/booking/ot7OaBbmHfnGN7cVtHCy';
+        
+        // Abre en la misma pestaña (evita bloqueos de pop-up)
+        window.location.href = calendarioURL;
+        
+        // Si prefieres que abra en nueva pestaña pero puede ser bloqueado:
+        // window.open(calendarioURL, '_blank');
+    }
+});
 
     const titleEl = content.querySelector('.results16-slide-title');
     const textEl = content.querySelector('.results16-slide-text');
@@ -758,7 +763,7 @@ function createResultsPage16() {
             renderSlide();
         } else {
             // URL del calendario
-            const calendarioURL = 'https://api.leadconnectorhq.com/widget/bookings/embudo-mastery-1-2-3-8c2982d9-2a2f-4723-a6b9-14c548f1529a';
+            const calendarioURL = 'https://api.leadconnectorhq.com/widget/booking/ot7OaBbmHfnGN7cVtHCy';
             window.open(calendarioURL, '_blank');
         }
     });
@@ -931,5 +936,6 @@ function restartTest() {
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
+
 
 
