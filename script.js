@@ -763,7 +763,7 @@ continueBtn.addEventListener('click', () => {
             renderSlide();
         } else {
             // URL del calendario
-            const calendarioURL = 'https://api.leadconnectorhq.com/widget/booking/ot7OaBbmHfnGN7cVtHCy';
+            const calendarioURL = 'https://api.leadconnectorhq.com/widget/form/oghcd9Tf8wuZc7P3ORBD?notrack=true';
             window.open(calendarioURL, '_blank');
         }
     });
@@ -936,6 +936,7 @@ function restartTest() {
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
+
 
 
 
