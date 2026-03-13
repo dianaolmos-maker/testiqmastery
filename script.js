@@ -758,7 +758,7 @@ function createResultsPage16() {
             renderSlide();
         } else {
             // URL del calendario
-            const calendarioURL = 'https://www.taskifydco.com/widget/booking/TivcYyJdqOWBGKhGTIi9';
+            const calendarioURL = 'https://api.leadconnectorhq.com/widget/booking/ot7OaBbmHfnGN7cVtHCy';
             window.open(calendarioURL, '_blank');
         }
     });
@@ -931,3 +931,4 @@ function restartTest() {
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
+
