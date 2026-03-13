@@ -696,16 +696,12 @@ function createResultsPage16() {
         </div>
 
         <div class="results16-actions">
-            <button class="btn results15-btn" id="results16-continue">
-                EVALUAR MI CASO CON UN ESTRATEGA
-            </button>
-
+            <button class="btn results15-btn" id="results16-continue">EVALUAR MI CASO CON UN ESTRATEGA</button>
             <p class="results16-disclaimer">
                 Conversación de diagnóstico sin costo (45–60 min). 
                 No es una llamada de ventas. 
                 Solo para founders en operación.
             </p>
-
             <button class="results16-link" type="button" onclick="prevPage()">Volver</button>
         </div>
     `;
@@ -752,14 +748,14 @@ function createResultsPage16() {
         }
     });
 
+    // Evento del botón final con la nueva URL del formulario de precalificación
     continueBtn.addEventListener('click', () => {
         if (currentSlide < slides.length - 1) {
             currentSlide++;
             renderSlide();
         } else {
-            // URL del calendario
-            const calendarioURL = 'https://www.taskifydco.com/widget/booking/TivcYyJdqOWBGKhGTIi9';
-            window.open(calendarioURL, '_blank');
+            const formularioURL = 'https://api.leadconnectorhq.com/widget/booking/ot7OaBbmHfnGN7cVtHCy';
+            window.location.href = formularioURL; // Redirige en la misma pestaña
         }
     });
 
@@ -767,7 +763,6 @@ function createResultsPage16() {
     container.appendChild(content);
     return container;
 }
-
 // ================= WEBHOOK =================
 
 // NUEVA URL DEL WEBHOOK (cámbiala si es necesario)
