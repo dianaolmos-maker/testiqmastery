@@ -970,3 +970,4 @@ function restartTest() {
 
 document.addEventListener('DOMContentLoaded', initApp);
 
+
