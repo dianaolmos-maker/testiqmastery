@@ -754,7 +754,7 @@ function createResultsPage16() {
             currentSlide++;
             renderSlide();
         } else {
-            const formularioURL = 'https://api.leadconnectorhq.com/widget/booking/ot7OaBbmHfnGN7cVtHCy';
+            const formularioURL = 'https://api.leadconnectorhq.com/widget/bookings/embudo-mastery-1-2-3-8c2982d9-2a2f-4723-a6b9-14c548f1529ah8s7od';
             window.location.href = formularioURL; // Redirige en la misma pestaña
         }
     });
